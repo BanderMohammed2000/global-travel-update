@@ -1,11 +1,14 @@
-<script></script>
-
 <template>
-  <div
-    class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white text-3xl font-bold"
-  >
-    Tailwind is working!
-  </div>
+  <the-header></the-header>
 </template>
 
-<style scoped></style>
+<script>
+import TheHeader from "./components/layout/TheHeader.vue";
+export default {
+  components: {
+    TheHeader,
+  },
+};
+</script>
+
+<style></style>

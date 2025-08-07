@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.vue-devtools__panel {
+  display: none !important;
+}
