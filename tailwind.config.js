@@ -9,8 +9,13 @@ export default {
       xl: "1440px",
     },
     extend: {
+      colors: {
+        lightGray: "rgb(197, 197, 197)",
+        matteBlack: "rgb(0, 0, 0, 0.3)",
+      },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        // sans: ["Inter", "sans-serif"],
+        sans: ["Merriweather", "sans-serif"],
       },
     },
   },
