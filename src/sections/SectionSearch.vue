@@ -1,46 +1,99 @@
 <template>
-  <section id="search">
+  <section id="search" class="bg-[#0d0c0c]">
     <div
-      class="container flex flex-col-reverse items-stretch max-w-6xl mx-auto px-20 py-14 md:space-x-16 lg:flex-row"
+      class="container flex flex-col-reverse items-stretch max-w-6xl mx-auto px-20 py-14 md:space-x-16 md:flex-row"
     >
-      <div class="mx-auto md:w-2/5">
+      <div class="md:w-2/5">
         <img
-          :src="skiImage"
-          alt="Ski Image"
+          :src="villageImage"
+          alt="Village Image"
           class="h-96 object-cover"
           loading="lazy"
         />
       </div>
-      <div class="card md:w-3/5 flex flex-col justify-center space-y-5">
-        <h1 class="text-4xl text-white max-w-lg leading-tight">
-          Searching for the world's most remote village
-        </h1>
-        <p class="text-sm text-lightGray max-w-md">
-          Whether going on a mountain trip is a long-held ambition or a recent
-          interest, there is no better time to plan an adventure than at the
-          start of a new year.
-        </p>
-        <button class="text-sm text-white pb-1 border-b-2 border-white w-fit">
-          Learn more
-        </button>
-      </div>
+      <base-card class="relative md:w-3/5 mb-10 md:mb-0">
+        <template v-slot:header>
+          <h1 class="card-header pr-8 pt-8 md:pt-0">
+            Searching for the world's most remote village
+          </h1>
+        </template>
+        <template v-slot:body>
+          <p class="card-body pr-8">
+            Far from cities and modern life, some villages remain hidden in
+            nature. These remote places are hard to reach but full of beauty and
+            peace. Life there is simple, quiet, and connected to the land.
+            Finding such a village is like stepping into another world.
+          </p>
+        </template>
+        <template v-slot:footer>
+          <button class="card-footer">Learn more</button>
+        </template>
+      </base-card>
     </div>
   </section>
 </template>
 
 <script>
-import skiImage from "@/assets/images/ski.jpg";
+import BaseCard from "@/components/ui/BaseCard.vue";
+import villageImage from "@/assets/images/village.jpg";
 export default {
+  components: {
+    BaseCard,
+  },
   data() {
     return {
-      skiImage,
+      villageImage,
     };
   },
 };
 </script>
 
 <style scoped>
-#search {
-  background-color: #181818;
+h1::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  /* height: 18.9rem; */
+  background-color: #cca763;
+  position: absolute;
+  top: 0%;
+  /* transform: translateY(-50%); */
+  right: 0rem;
+}
+
+.card::before {
+  content: "";
+  width: 50%;
+  /* width: 17rem; */
+  height: 5px;
+  background-color: #cca763;
+  position: absolute;
+  right: 0rem;
+  top: 0%;
+}
+
+.card::after {
+  content: "";
+  width: 50%;
+  /* width: 17rem; */
+  height: 5px;
+  background-color: #cca763;
+  position: absolute;
+  right: 0rem;
+  bottom: 0%;
+  /* bottom: -20%; */
+  /* bottom: -22%; */
+}
+
+@media (max-width: 768px) {
+  h1::before {
+    height: 100%;
+  }
+  .card::before {
+    width: 80%;
+  }
+  .card::after {
+    display: none;
+  }
 }
 </style>

@@ -8,6 +8,21 @@
   }
 }
 
+@layer components {
+  .card {
+    @apply flex flex-col justify-center space-y-5;
+  }
+  .card-header {
+    @apply text-3xl md:text-4xl text-white max-w-lg leading-tight;
+  }
+  .card-body {
+    @apply text-sm text-lightGray max-w-md;
+  }
+  .card-footer {
+    @apply text-sm text-white pb-1 border-b-2 border-white w-fit;
+  }
+}
+
 .vue-devtools__panel {
   display: none !important;
 }
