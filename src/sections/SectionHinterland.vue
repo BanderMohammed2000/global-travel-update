@@ -1,5 +1,5 @@
 <template>
-  <section id="search" class="bg-[#0d0c0c]">
+  <section id="hinterland" class="bg-[#0d0c0c]">
     <div
       class="container flex flex-col-reverse items-stretch max-w-6xl mx-auto px-20 py-14 md:space-x-16 md:flex-row"
     >
@@ -53,18 +53,15 @@ h1::before {
   content: "";
   width: 5px;
   height: 100%;
-  /* height: 18.9rem; */
   background-color: #cca763;
   position: absolute;
   top: 0%;
-  /* transform: translateY(-50%); */
   right: 0rem;
 }
 
 .card::before {
   content: "";
   width: 50%;
-  /* width: 17rem; */
   height: 5px;
   background-color: #cca763;
   position: absolute;
@@ -75,14 +72,11 @@ h1::before {
 .card::after {
   content: "";
   width: 50%;
-  /* width: 17rem; */
   height: 5px;
   background-color: #cca763;
   position: absolute;
   right: 0rem;
   bottom: 0%;
-  /* bottom: -20%; */
-  /* bottom: -22%; */
 }
 
 @media (max-width: 768px) {

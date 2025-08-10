@@ -1,5 +1,5 @@
 <template>
-  <section id="tourists" class="bg-[rgb(26,24,24)]">
+  <section id="stats" class="bg-[rgb(26,24,24)]">
     <div
       class="container flex flex-col space-y-14 max-w-6xl mx-auto pt-14 pb-20 px-20"
     >

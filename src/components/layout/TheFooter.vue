@@ -15,19 +15,19 @@
           <input
             type="text"
             placeholder="Enter your Name"
-            class="p-2 w-[118%] sm:w-full rounded border-2 border-lightGray outline-0"
+            class="p-2 w-[118%] sm:w-full rounded border-2 border-lightGray focus:border-[#cca763] outline-0"
           />
           <input
             type="email"
             placeholder="Enter your Email"
-            class="p-2 w-[118%] sm:w-full rounded border-2 border-lightGray outline-0"
+            class="p-2 w-[118%] sm:w-full rounded border-2 border-lightGray focus:border-[#cca763] outline-0"
           />
           <textarea
             placeholder="Enter your Message"
-            class="p-2 w-[118%] sm:w-full rounded h-28 border-2 border-lightGray outline-0"
+            class="p-2 w-[118%] sm:w-full rounded h-28 border-2 border-lightGray focus:border-[#cca763] outline-0"
           ></textarea>
           <button
-            class="text-sm text-white uppercase px-6 py-2 bg-[#cca763] rounded w-fit"
+            class="text-sm text-white uppercase px-6 py-2 bg-[#cca763] hover:bg-[#b6965a] transition duration-500 rounded w-fit"
           >
             submit
           </button>

@@ -4,7 +4,6 @@
     class="bg-no-repeat bg-cover bg-center pb-24 relative"
     :style="`background-image: url(${bgHero})`"
   >
-    <!-- <div class="overlay absolute bg-matteBlack w-full h-full"></div> -->
     <div class="container max-w-6xl mx-auto p-6">
       <the-navbar></the-navbar>
     </div>
@@ -58,18 +57,15 @@ h1::before {
   content: "";
   width: 5px;
   height: 135%;
-  /* height: 18.9rem; */
   background-color: #cca763;
   position: absolute;
   top: -15%;
-  /* transform: translateY(-50%); */
   left: 1.5rem;
 }
 
 .card::before {
   content: "";
   width: 25%;
-  /* width: 17rem; */
   height: 5px;
   background-color: #cca763;
   position: absolute;
@@ -80,13 +76,11 @@ h1::before {
 .card::after {
   content: "";
   width: 25%;
-  /* width: 17rem; */
   height: 5px;
   background-color: #cca763;
   position: absolute;
   left: 1.5rem;
   bottom: -20%;
-  /* bottom: -22%; */
 }
 
 @media (max-width: 768px) {

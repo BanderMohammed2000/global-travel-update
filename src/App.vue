@@ -1,23 +1,23 @@
 <template>
   <the-header></the-header>
-  <section-search></section-search>
+  <section-hinterland></section-hinterland>
   <section-activities></section-activities>
-  <section-tourists></section-tourists>
+  <section-stats></section-stats>
   <the-footer></the-footer>
 </template>
 
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
-import SectionSearch from "./sections/SectionSearch.vue";
+import SectionHinterland from "./sections/SectionHinterland.vue";
 import SectionActivities from "./sections/SectionActivities.vue";
-import SectionTourists from "./sections/SectionTourists.vue";
+import SectionStats from "./sections/SectionStats.vue";
 import TheFooter from "./components/layout/TheFooter.vue";
 export default {
   components: {
     TheHeader,
-    SectionSearch,
+    SectionHinterland,
     SectionActivities,
-    SectionTourists,
+    SectionStats,
     TheFooter,
   },
 };
