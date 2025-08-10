@@ -4,7 +4,7 @@
     class="bg-no-repeat bg-cover bg-center"
     :style="`background-image: url(${bgCamp})`"
   >
-    <div class="container max-w-6xl mx-auto px-20 py-20">
+    <div class="container max-w-6xl mx-auto px-20 !py-32">
       <base-card>
         <template v-slot:header>
           <h1 class="card-header relative">

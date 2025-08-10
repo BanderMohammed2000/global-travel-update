@@ -14,7 +14,6 @@ export default {
         matteBlack: "rgb(0, 0, 0, 0.3)",
       },
       fontFamily: {
-        // sans: ["Inter", "sans-serif"],
         sans: ["Merriweather", "sans-serif"],
       },
     },

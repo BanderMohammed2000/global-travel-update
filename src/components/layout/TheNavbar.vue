@@ -1,6 +1,6 @@
 <template>
   <nav class="flex items-center justify-between font-bold text-white">
-    <h1 class="text-2xl font-medium">Global Travel Update</h1>
+    <h1 class="text-xl md:text-2xl font-medium">Global Travel Update</h1>
     <!-- Menu -->
     <div class="hidden h-10 md:flex md:items-center md:space-x-14">
       <div>
